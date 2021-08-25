@@ -1,0 +1,57 @@
+@mixin flex-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hover {
+    color: $color1;
+    transition: all ease .3s;
+}
+
+@mixin hoverScale {
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+@mixin structure {
+    .box {
+        @include flex-layout;
+        flex-direction: column;
+        margin: 15px;
+        padding: 15px;
+        border: 1px solid $color1;
+        border-radius: 8px;
+        h3 {
+            font-size: 1.15rem;
+        }
+        img {
+            height: 180px;
+            width: auto;
+        }
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+        }
+        .buyBtn {
+            color: $white-font;
+            background-color: $color1;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            transition: all .4s ease-out;
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+}
+
+@mixin globalStructure {
+    @include flex-layout;
+    flex-wrap: wrap;
+    margin: 10px;
+    @include structure;
+}

@@ -1,0 +1,212 @@
+[
+    {
+        "model": "HP 14",
+        "id": "hp14",
+        "price": 1250,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "MACBOOK AIR",
+        "id": "macbookAir",
+        "price": 1700,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "MSI MODERN 14",
+        "id": "modern14",
+        "price": 1650,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "LENOVO YOGA S7",
+        "id": "yogas7",
+        "price": 1500,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "ACER INSPIRE 5",
+        "id": "aspire5",
+        "price": 1100,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "THINKBOOK 14",
+        "id": "thinkbook14",
+        "price": 1150,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "LG GRAM",
+        "id": "lgGram",
+        "price": 1350,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "MACBOOK PRO",
+        "id": "macbookPro",
+        "price": 1850,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "IDEAPAD 13",
+        "id": "ideapad13",
+        "price": 1240,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "MSI GF63",
+        "id": "msigf63",
+        "price": 1750,
+        "category": "laptops",
+        "quantity": 1
+    },
+    {
+        "model": "IPHONE 12",
+        "id": "iphone12",
+        "price": 2000,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "MI 11 LITE",
+        "id": "mi11lite",
+        "price": 1400,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "POCO F3",
+        "id": "pocof3",
+        "price": 1600,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "SAMSUNG S21",
+        "id": "s21",
+        "price": 1800,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "HUAWEI Y7",
+        "id": "huaweiy7",
+        "price": 450,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "REDMI NOTE 9",
+        "id": "redmiNote9",
+        "price": 800,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "REDMI NOTE 10",
+        "id": "redminote10",
+        "price": 950,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "SAMSUNG A51",
+        "id": "a51",
+        "price": 1100,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "IPHONE 11",
+        "id": "iphone11",
+        "price": 1750,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "IPHONE SE",
+        "id": "iphoneSE",
+        "price": 1450,
+        "category": "smartphones",
+        "quantity": 1
+    },
+    {
+        "model": "IPAD AIR 2021",
+        "id": "ipadAir",
+        "price": 1700,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "AMAZON KINDLE",
+        "id": "kindle",
+        "price": 250,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "HUAWEI MATEPAD",
+        "id": "matepad",
+        "price": 1200,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "SAMSUNG TAB S6",
+        "id": "tabs6",
+        "price": 1500,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "SAMSUNG TAB A10",
+        "id": "tabA10",
+        "price": 900,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "SMARTPAD 10",
+        "id": "smartpad10",
+        "price": 700,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "LENOVO TAB E10",
+        "id": "tabE10",
+        "price": 600,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "SAMSUNG TAB A7",
+        "id": "tabA7",
+        "price": 999,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "IPAD 2020",
+        "id": "ipad8th",
+        "price": 1300,
+        "category": "tablets",
+        "quantity": 1
+    },
+    {
+        "model": "YOGA TAB 10",
+        "id": "yogaTab10",
+        "price": 1200,
+        "category": "tablets",
+        "quantity": 1
+    }
+]

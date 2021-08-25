@@ -1,0 +1,392 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white-font;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .05);
+    z-index: 100;
+    .social-call {
+        height: 2.5rem;
+        border: 1px solid rgba(0, 0, 0, .05);
+        @include flex-layout;
+        text-align: center;
+        .social a {
+            margin: 0 5px;
+            color: $color2;
+            font-size: 1.25rem;
+            transition: all ease-in-out .5s;
+            &:hover {
+                @include hover;
+            }
+        }
+        .phone {
+            margin-left: 1.875rem;
+            font-size: 1.25rem;
+        }
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 45px;
+        .logo img {
+            height: 3rem;
+        }
+        .menu {
+            @include flex-layout;
+            margin-bottom: 0;
+            li {
+                position: relative;
+                margin: 1.25rem;
+                display: flex;
+                font-weight: 700;
+                text-transform: uppercase;
+                a {
+                    color: #555;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+        .right-menu {
+            @include flex-layout;
+            a {
+                color: $color2;
+                font-size: 1.25rem;
+                margin: 0 1rem;
+                &:hover {
+                    @include hover;
+                }
+            }
+            .num-cart-product {
+                position: absolute;
+                top: -10px;
+                right: 0;
+                @include flex-layout;
+                background-color: $color1;
+                color: $white-font;
+                font-size: .8rem;
+                font-weight: 700;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+}
+
+/* Login */
+
+.form {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+    @include flex-layout;
+    flex-direction: column;
+    z-index: 102;
+    display: none;
+    .login-form {
+        width: 420px;
+        padding: 20px 10px;
+        background-color: #fff;
+        box-shadow: $shadow;
+        @include flex-layout;
+        flex-direction: column;
+        border-radius: 5px;
+        position: relative;
+        display: none;
+        .form-cancel {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2rem;
+            color: $color2;
+            &:hover {
+                @include hover;
+            }
+        }
+        form {
+            @include flex-layout;
+            flex-direction: column;
+            width: 100%;
+        }
+        strong {
+            color: $color2;
+            font-size: 2rem; 
+            margin: 2px 7px 7px 7px;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            font-weight: 400;
+        }
+        input {
+            width: 90%;
+            height: 45px;
+            margin: 6px 0;
+            padding: 0 10px;
+            border: 1px solid rgba(0, 0, 0, .2);
+            outline: none;
+            border-radius: 7px;
+            &::placeholder {
+                color: $color2;
+            }
+            &:focus {
+                border: 2px solid $color1;
+                outline: 0;
+                border-radius: .5rem;
+            }
+            &[type='submit'] {
+                background-color: $color1;
+                color: $white-font;
+                border: none;
+                outline: none;
+                text-transform: uppercase;
+                margin-top: 10px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .sign-up-form {
+        @extend .login-form;
+    }
+}
+
+.form-btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    a {
+        color: $color2;
+        font-size: 1rem;
+        text-decoration: none;
+        &:hover {
+            color: $color1;
+        }
+    }
+    .sign-up-btn {
+        color: $color1;
+        border-bottom: 1px solid $color1;
+        line-height: 16px;
+    }
+}
+
+.login-active {
+    display: flex;
+    animation: fade .8s;
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .login-form {
+        @extend .login-active;
+    }
+}
+
+.sign-up-active {
+    @extend .login-active;
+    .sign-up-form {
+        @extend .login-active;
+    }
+}
+
+/* Carousel */
+.carousel {
+    margin-top: 50px;
+}
+
+/* Products */
+
+.pricesBtn {
+    color: $white-font;
+    background-color: $color1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin: 30px 15px;
+    transition: all .8s ease-out;
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.laptops-container {
+    @include globalStructure;
+}
+
+.phones-container {
+    @include globalStructure;
+}
+.tablets-container {
+    @include globalStructure;
+}
+
+/* Cart */
+.cart-container {
+    position: relative;
+}
+.cart-products {
+    position: absolute;
+    display: none;
+    top: 30px;
+    right: 12px;
+    background: #f5f5f5;
+    width: 380px;
+    max-height: 600px;
+    overflow: scroll;
+}
+#close-cart {
+    display: none;
+}
+.cart-item {
+    border: 1px solid $color1;
+    border-radius: 8px;
+    background: #fff;
+    margin: 4px;
+    position: relative;
+    width: 240px;
+    .btnQ {
+        background: $color1;
+        border: none;
+        border-radius: 4px;
+        .fas {
+            color: #fff;
+        }
+    }
+    
+}
+.cart-options {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    @include flex-layout;
+}
+
+.cleanCart {
+    color: $white-font;
+    background-color: $color1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    @include hoverScale;
+}
+
+.purchase {
+    @include hoverScale;
+}
+
+#searchDesc {
+    background-color: $color1;
+    color: #fff;
+    border-color: $color1;
+}
+
+.btn-cancel {
+    background-color: $color1;
+    color: #fff;
+    border-color: $color1;
+}
+
+
+/* Services */
+
+.services {
+    @include flex-layout;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 60px auto;
+    &-box {
+        @include flex-layout;
+        flex-direction: column;
+        border: 1px solid $shadow;
+        border-radius: 8px;
+        min-width: 250px;
+        padding: 20px;
+        margin: 15px;
+        flex-grow: .7;
+        i {
+            color: $color1;
+            font-size: 2.5rem;
+            margin: 15px;
+        }
+        span {
+            color: $color2;
+            font-weight: 700;
+            letter-spacing: .5px;
+            font-size: 1.5rem;
+        }
+        p {
+            color: #000;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    border-top: 1px solid $shadow;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .copyright {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 10px;
+    }
+    .subscribe {
+        input {
+            width: 240px;
+            height: 45px;
+            padding: 0 15px;
+            outline: none;
+        }
+        input[type="submit"] {
+            width: 120px;
+            background-color: $color1;
+            color: $white-font;
+            border: none;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+
+
+
+
